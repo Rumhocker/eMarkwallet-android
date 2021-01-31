@@ -29,7 +29,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.breadwallet.presenter.customviews.BRText
+        <de.eMark.presenter.customviews.BRText
             android:id="@+id/titleLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             app:layout_constraintTop_toTopOf="@id/logo"
             tools:text="@string/BuyCenter.simplex.Title" />
 
-        <com.breadwallet.presenter.customviews.BRText
+        <de.eMark.presenter.customviews.BRText
             android:id="@+id/detailLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <com.breadwallet.presenter.customviews.BRText
+    <de.eMark.presenter.customviews.BRText
         android:id="@+id/BRText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

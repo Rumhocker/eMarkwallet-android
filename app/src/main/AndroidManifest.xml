@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.breadwallet">
+          package="de.eMark">
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -37,7 +37,7 @@
         android:required="false"/>
 
     <application
-        android:name=".BreadApp"
+        android:name="de.eMark.BreadApp"
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
@@ -50,7 +50,7 @@
         >
 
         <activity
-            android:name=".presenter.activities.intro.IntroActivity"
+            android:name="de.eMark.presenter.activities.intro.IntroActivity"
             android:label="Litewallet"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
@@ -60,7 +60,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presenter.activities.BreadActivity"
+            android:name="de.eMark.presenter.activities.BreadActivity"
             android:label="Litewallet"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -83,148 +83,148 @@
                 android:resource="@xml/searchable"/>
         </activity>
         <activity
-            android:name=".presenter.activities.SetPinActivity"
+            android:name="de.eMark.presenter.activities.SetPinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.intro.RecoverActivity"
+            android:name="de.eMark.presenter.activities.intro.RecoverActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.WipeActivity"
+            android:name="de.eMark.presenter.activities.settings.WipeActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.ImportActivity"
+            android:name="de.eMark.presenter.activities.settings.ImportActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.ReEnterPinActivity"
+            android:name="de.eMark.presenter.activities.ReEnterPinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.UpdatePinActivity"
+            android:name="de.eMark.presenter.activities.UpdatePinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.LoginActivity"
+            android:name="de.eMark.presenter.activities.LoginActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.SettingsActivity"
+            android:name="de.eMark.presenter.activities.settings.SettingsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.NotificationActivity"
+            android:name="de.eMark.presenter.activities.settings.NotificationActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.SyncBlockchainActivity"
+            android:name="de.eMark.presenter.activities.settings.SyncBlockchainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.DisplayCurrencyActivity"
+            android:name="de.eMark.presenter.activities.settings.DisplayCurrencyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.AboutActivity"
+            android:name="de.eMark.presenter.activities.settings.AboutActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.SecurityCenterActivity"
+            android:name="de.eMark.presenter.activities.settings.SecurityCenterActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.ShareDataActivity"
+            android:name="de.eMark.presenter.activities.settings.ShareDataActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.intro.WriteDownActivity"
+            android:name="de.eMark.presenter.activities.intro.WriteDownActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.PaperKeyActivity"
+            android:name="de.eMark.presenter.activities.PaperKeyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.SpendLimitActivity"
+            android:name="de.eMark.presenter.activities.settings.SpendLimitActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.PaperKeyProveActivity"
+            android:name="de.eMark.presenter.activities.PaperKeyProveActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.InputWordsActivity"
+            android:name="de.eMark.presenter.activities.InputWordsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.camera.ScanQRActivity"
+            android:name="de.eMark.presenter.activities.camera.ScanQRActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.WebViewActivity"
+            android:name="de.eMark.presenter.activities.settings.WebViewActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.DisabledActivity"
+            android:name="de.eMark.presenter.activities.DisabledActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.FingerprintActivity"
+            android:name="de.eMark.presenter.activities.settings.FingerprintActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.AdvancedActivity"
+            android:name="de.eMark.presenter.activities.settings.AdvancedActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.WithdrawBchActivity"
+            android:name="de.eMark.presenter.activities.settings.WithdrawBchActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.NodesActivity"
+            android:name="de.eMark.presenter.activities.settings.NodesActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.camera.CameraActivity"
+            android:name="de.eMark.presenter.activities.camera.CameraActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.TestActivity"
+            android:name="de.eMark.presenter.activities.settings.TestActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
 
         <service
-            android:name=".tools.listeners.SyncReceiver"
+            android:name="de.eMark.tools.listeners.SyncReceiver"
             android:enabled="true"
             android:exported="false"
             android:label="SyncReceiver"/>

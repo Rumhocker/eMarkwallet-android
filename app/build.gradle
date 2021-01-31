@@ -39,7 +39,7 @@ android {
 
     defaultConfig {
         testInstrumentationRunner = 'androidx.test.runner.AndroidJUnitRunner'
-        applicationId = 'com.loafwallet'
+        applicationId = 'de.eMark'
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 633
@@ -81,35 +81,35 @@ android {
     // Specifies two flavor dimensions.
     flavorDimensions "mode"
     productFlavors {
-        loaf {
-            applicationId "com.loafwallet"
+        eMark {
+            applicationId "de.eMark"
             dimension "mode"
-            resValue "string", "app_name", "Litewallet"
-            buildConfigField "boolean", "LITECOIN_TESTNET", "false"
+            resValue "string", "app_name", "eMark"
+            buildConfigField "boolean", "EMARK_TESTNET", "false"
 
             externalNativeBuild {
                 cmake {
                     // When you specify a version of CMake, as shown below,
                     // the Android plugin searches for its binary within your
                     // PATH environmental variable.
-                    cFlags "-DLITECOIN_TESTNET=0"
+                    cFlags "-DEMARK_TESTNET=0"
                     targets "core-lib"
                 }
             }
         }
 
-        loafTestnet {
-            applicationId "com.loafwallet.testnet"
+        eMarkTestnet {
+            applicationId "de.eMarktestnet"
             dimension "mode"
-            resValue "string", "app_name", "Litewallet-testnet"
-            buildConfigField "boolean", "LITECOIN_TESTNET", "true"
+            resValue "string", "app_name", "eMark-testnet"
+            buildConfigField "boolean", "EMARK_TESTNET", "true"
 
             externalNativeBuild {
                 cmake {
                     // When you specify a version of CMake, as shown below,
                     // the Android plugin searches for its binary within your
                     // PATH environmental variable.
-                    cFlags "-DLITECOIN_TESTNET=1"
+                    cFlags "-DEMARK_TESTNET=1"
                     targets "core-lib"
                 }
             }
