@@ -36,6 +36,7 @@
 #include <assert.h>
 #include <unistd.h>
 #include <arpa/inet.h>
+#include <stdlib.h>
 
 #define fprintf(...) __android_log_print(ANDROID_LOG_ERROR, "bread", _va_rest(__VA_ARGS__, NULL))
 
@@ -175,7 +176,7 @@ static void saveBlocks(void *info, int replace, BRMerkleBlock *blocks[], size_t 
     }
 
     mid = (*env)->GetStaticMethodID(env, _peerManagerClass, "saveBlocks",
-                                    "([Lde.eMark/presenter/entities/BlockEntity;Z)V");
+                                    "([Lde/eMark/presenter/entities/BlockEntity;Z)V");
     (*env)->CallStaticVoidMethod(env, _peerManagerClass, mid, blockObjectArray,
                                  replace ? JNI_TRUE : JNI_FALSE);
 }
@@ -222,7 +223,7 @@ static void savePeers(void *info, int replace, const BRPeer peers[], size_t coun
     }
 
     mid = (*env)->GetStaticMethodID(env, _peerManagerClass, "savePeers",
-                                    "([Lde.eMark/presenter/entities/PeerEntity;Z)V");
+                                    "([Lde/eMark/presenter/entities/PeerEntity;Z)V");
     (*env)->CallStaticVoidMethod(env, _peerManagerClass, mid, peerObjectArray,
                                  replace ? JNI_TRUE : JNI_FALSE);
 }
@@ -266,9 +267,9 @@ Java_de_eMark_wallet_BRPeerManager_create(JNIEnv *env, jobject thiz,
                         blocksCount, peersCount, earliestKeyTime);
 
     jint rs = (*env)->GetJavaVM(env, &_jvmPM);
-    jclass peerManagerClass = (*env)->FindClass(env, "de.eMark/wallet/BRPeerManager");
-    jclass blockClass = (*env)->FindClass(env, "de.eMark/presenter/entities/BlockEntity");
-    jclass peerClass = (*env)->FindClass(env, "de.eMark/presenter/entities/PeerEntity");
+    jclass peerManagerClass = (*env)->FindClass(env, "de/eMark/wallet/BRPeerManager");
+    jclass blockClass = (*env)->FindClass(env, "de/eMark/presenter/entities/BlockEntity");
+    jclass peerClass = (*env)->FindClass(env, "de/eMark/presenter/entities/PeerEntity");
 
     _peerManagerClass = (jclass) (*env)->NewGlobalRef(env, (jobject) peerManagerClass);
     _blockClass = (jclass) (*env)->NewGlobalRef(env, (jobject) blockClass);
